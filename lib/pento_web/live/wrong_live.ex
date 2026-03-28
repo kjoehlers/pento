@@ -29,6 +29,14 @@ defmodule PentoWeb.WrongLive do
           </.link>
         <% end %>
       </h2>
+      <h2>
+        Current user: {@current_scope.user.email}
+        <br /> Current user ID: {@current_scope.user.id}
+        <br /> Current user authenticated at: {@current_scope.user.authenticated_at}
+        <br /> Current user password: {@current_scope.user.password}
+        <br /> Current user hashed password: {@current_scope.user.hashed_password}
+        <br /> Current user confirmed at: {@current_scope.user.confirmed_at}
+      </h2>
     </main>
     """
   end
